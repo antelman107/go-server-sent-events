@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h3>Received Server Side events:</h3>
+    <div id="value"></div>
+
+    <script type="text/javascript">
+        var val = document.getElementById('value')
+
+        var evtSource = new EventSource('/api/events');
+        evtSource.onmessage = function(e) {
+            val.innerText = e.data
+        }
+    </script>
+</body>
+</html>
