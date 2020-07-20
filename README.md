@@ -22,7 +22,7 @@ Then go to http://localhost:1323/static/index.html
 
 One should see following:
 
-![alt text](https://github.com/rhaps107/go-server-side-events/blob/master/readme_counter.png?raw=true)
+![alt text](https://github.com/rhaps107/go-server-sent-events/blob/master/readme_counter.png?raw=true)
 
 ## TODO
  - allow multiple client connections (it is the only one connection currently)
